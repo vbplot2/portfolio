@@ -11,15 +11,15 @@ export default function Home() {
       </Head>
       <Navbar />
       <main className="p-6">
-        <section className="h-screen flex flex-col items-center justify-center text-center bg-white dark:bg-gray-900 transition-colors duration-300">
-          <h1 className="text-4xl font-bold mb-4 text-gray-900 dark:text-gray-100">Van Brantley</h1>
-          <p className="text-lg mb-6 text-gray-700 dark:text-gray-300">
+        <section className="h-screen flex flex-col items-center justify-center text-center bg-white transition-colors duration-300">
+          <h1 className="text-4xl font-bold mb-4 text-gray-900">Van Brantley</h1>
+          <p className="text-lg mb-6 text-gray-700">
             Turning data into insight through analysis and storytelling
           </p>
           <a href="#projects" className="animate-bounce mt-6">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-8 w-8 text-black-600 dark:text-white-400"
+              className="h-8 w-8 text-black-600"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -31,7 +31,7 @@ export default function Home() {
         </section>
 
         <section id="projects" className="py-16">
-          <h2 className="text-2xl font-bold mb-8 text-center text-gray-900 dark:text-gray-100">Projects</h2>
+          <h2 className="text-2xl font-bold mb-8 text-center text-gray-900">Projects</h2>
           <div className="grid gap-6 md:grid-cols-2">
             <ProjectCard
               title="Personal Finance Dashboard"
