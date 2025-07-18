@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Navbar from '@/components/Navbar';
 import ProjectCard from '@/components/ProjectCard';
-// import ThemeToggle from '@/components/ThemeToggle';
 
 export default function Home() {
   return (
@@ -37,20 +36,26 @@ export default function Home() {
               title="Personal Finance Dashboard"
               description="Excel template designed to help you take control of your finances with clarity and insight."
               image="/images/budget-icon.png"
-              techIcons={['/images/excel.jpg']}
+              techIcons={[
+                { src: '/images/excel.jpg', label: 'Excel' }
+              ]}
               link="https://drive.google.com/drive/folders/1uLYHniJfvrdoWd5NXMsbgfsvkM32ZfnR?usp=sharing"
             />
             <ProjectCard
               title="NYC Rent Explorer"
               description="Interactive map-based dashboard designed to make New York City rent data easy to explore and analyze."
               image="/images/rent-icon.png"
-              techIcons={['/images/python.webp', '/images/pandas.png', '/images/streamlit.png']}
+              techIcons={[
+                { src: '/images/python.webp', label: 'Python' },
+                { src: '/images/pandas.png', label: 'Pandas' },
+                { src: '/images/jupyter.png', label: 'Jupyter' },
+                { src: '/images/streamlit.png', label: 'Streamlit' },
+              ]}
               link="https://nyc-rent-explorer.streamlit.app/"
             />
           </div>
         </section>
       </main>
-      {/* <ThemeToggle /> */}
     </>
   );
 }

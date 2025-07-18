@@ -6,7 +6,13 @@ export default function ProjectCard({ title, description, image, techIcons, link
             <p className="mb-4 text-gray-700">{description}</p>
             <div className="flex gap-2 mb-4">
                 {techIcons.map((icon, idx) => (
-                    <img key={idx} src={icon} alt="tech" className="w-6 h-6" />
+                    <img
+                        key={idx}
+                        src={icon.src}
+                        alt={icon.label}
+                        title={icon.label}
+                        className="w-6 h-6"
+                    />
                 ))}
             </div>
             <a
