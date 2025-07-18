@@ -33,13 +33,15 @@ export default function Home() {
           <h2 className="text-2xl font-bold mb-8 text-center text-gray-900">Projects</h2>
           <div className="grid gap-6 md:grid-cols-2">
             <ProjectCard
-              title="Personal Finance Dashboard"
-              description="Excel template designed to help you take control of your finances with clarity and insight."
-              image="/images/budget-icon.png"
+              title="Streetwear Analytics Dashboard"
+              description="Business intelligence dashboard that tracks sales, customer trends, and product performance for a simulated clothing e-commerce store."
+              image="/images/streetwear-icon.png"
               techIcons={[
-                { src: '/images/excel.jpg', label: 'Excel' }
+                { src: '/images/sql.webp', label: 'SQL' },
+                { src: '/images/powerbi.webp', label: 'Power BI' },
+                { src: '/images/aws.png', label: 'AWS' }
               ]}
-              link="https://drive.google.com/drive/folders/1uLYHniJfvrdoWd5NXMsbgfsvkM32ZfnR?usp=sharing"
+              link="#" // placeholder link
             />
             <ProjectCard
               title="NYC Rent Explorer"
@@ -52,6 +54,15 @@ export default function Home() {
                 { src: '/images/streamlit.png', label: 'Streamlit' },
               ]}
               link="https://nyc-rent-explorer.streamlit.app/"
+            />
+            <ProjectCard
+              title="Personal Finance Dashboard"
+              description="Excel template designed to help you take control of your finances with clarity and insight."
+              image="/images/budget-icon.png"
+              techIcons={[
+                { src: '/images/excel.jpg', label: 'Excel' }
+              ]}
+              link="https://drive.google.com/drive/folders/1uLYHniJfvrdoWd5NXMsbgfsvkM32ZfnR?usp=sharing"
             />
           </div>
         </section>
